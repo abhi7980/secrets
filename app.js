@@ -8,6 +8,10 @@ const md5 = require("md5");
 
 const app = express();
 
+const test = () => {
+    console.log("test")
+}
+ 
 app.use(express.static("public"));
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({
